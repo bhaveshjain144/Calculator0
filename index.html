@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<h1><a style="text-decoration: none; color: #f1c40f; margin-left: 0.25rem; font-size:4rem;"
+				onclick="location.reload();">CALCULATOR</a></h1>
+		<div class="calculator" role="table">
+			<input class="textview" name="textview" id="result" placeholder="Enter values">
+			<table>
+				<tr>
+					<td><input class="button" type="button" value="%" onclick="insert('%')"></td>
+					<td><input class="button" type="button" value="÷" onclick="insert('/')"></td>
+					<td><input class="button" type="button" value="&#10229;" onclick="back()"
+							style="background-color: #e7d63c; font-weight: bold;"></td>
+					<td><input class="button" type="button" value="C" onclick="clean()"
+							style="background-color: #e74c3c; font-weight: bold; color: #ecf0f1;"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+					<td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+					<td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+					<td><input class="button" type="button" value="x" onclick="insert('*')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="4" onclick=insert(4)></td>
+					<td><input class="button" type="button" value="5" onclick=insert(5)></td>
+					<td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+					<td><input class="button" type="button" value="-" onclick="insert('-')"></td>
+				</tr>
+				<tr>
+					<td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+					<td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+					<td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+					<td><input class="button" type="button" value="+" onclick="insert('+')"></td>
+				</tr>
+				<tr>
+					<td id="btn"><input class="button" type="button" value="0" onclick="insert(0)"></td>
+					<td><input class="button" type="button" value="." onclick="insert('.')"></td>
+					<td><input class="button" type="button" value="x²" onclick=pow() id="r"></td>
+					<td><input id="equal" class="button" type="button" value="=" onclick=equals()
+							style="background-color: #229b55 ; font-weight: bold; color: #ecf0f1;"></td>
+				</tr>
+			</table>
+			<hr>
+			<div style=" font-size:2rem; display: flex; align-items: center; justify-content: center; color: #f1c40f; ">
+				Made by Aryan
+				Yadav</div>
+		</div>
+	</div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
